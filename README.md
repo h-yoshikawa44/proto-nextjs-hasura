@@ -20,6 +20,11 @@ $ yarn dev
 ```
 localhost:3000 でサイト表示
 
+Hasura GraphQL Engine 立ち上げ
+```
+$ docker-compose up -d
+```
+
 Hasura コンソール立ち上げ
 ```
 $ yarn hasura console --project hasura
