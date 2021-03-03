@@ -29,4 +29,4 @@ Hasura コンソール立ち上げ
 ```
 $ yarn hasura console --project hasura
 ```
-http://localhost:9695 でコンソール表示
+localhost:9695 でコンソール表示
