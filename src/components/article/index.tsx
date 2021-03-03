@@ -9,7 +9,7 @@ type Props = {
 export const Article: React.FC<Props> = ({ content }) => {
   return (
     <>
-      {content.split('\\n\\n').map((p, i) => (
+      {content.split('\n\n').map((p, i) => (
         <Paragraph p={p} key={i} />
       ))}
     </>
