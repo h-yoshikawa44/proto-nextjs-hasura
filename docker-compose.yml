@@ -2,7 +2,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres:12
-    restart: always
+    # restart: always
     volumes:
     - db_data_prototyping_sample-1:/var/lib/postgresql/data
     environment:
@@ -13,7 +13,7 @@ services:
     - "8080:8080"
     depends_on:
     - "postgres"
-    restart: always
+    # restart: always
     environment:
       HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgrespassword@postgres:5432/postgres
       ## enable the console served by server
